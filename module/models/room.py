@@ -12,11 +12,18 @@ class Room():
             self.matrix.append()
         self.saveMatrix()
 
-    def saveMatrix(self):
-        with open(os.path.abspath(), 'w', encoding='utf-8') as file:
-            json.dump(self.matrix, file, ensure_ascii=False, indent=4)
+    def wallMatrixCreare(self, wallSize:tuple):
+        self.wallMatrix = [wallSize[1]]
+        for i in range(wallSize[0]):
+            self.wallMatrix.append()
+        # TODO Finalize wall Matrix
+
+    def moveFurniture(self):
+        pass
+    # TODO MORE FINALIZE WORK!!!
 
 class OldRoom(Room):
     def furnitureMatrix(self):
         pass
     # TODO Write this
+    # Old room auto move in create.
