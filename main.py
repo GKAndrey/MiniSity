@@ -1,2 +1,3 @@
-from .module import __init__
+from module.script.createMap import *
 
+create_map()

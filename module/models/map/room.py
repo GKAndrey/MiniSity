@@ -1,6 +1,6 @@
 import json, os
 
-class Room():
+class Room( ):
     def __init__(self, type:str, itemIdList:list, sizeMatrix:tuple, furniture:list=None, passivePersone:list=None):
         self.matrix = [[sizeMatrix[1]]]
         self.type = type
